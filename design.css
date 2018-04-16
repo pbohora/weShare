@@ -1,7 +1,11 @@
+body{
+
+  background-image:url("book.jpg");
+}
 .container{
     display:flex;
     flex-direction: column;
-  
+
 }
 .header{
     border:20px solid red;
@@ -13,27 +17,27 @@
 }
  .secondcontainer{
      display:flex;
-   
+     padding-top: 20px;
      }
 .thirdcontainer{
     display: flex;
-  
+
     flex-direction: column;
-   
+
     flex-grow:2;
-   
+
 }
 
  .sidenav {
    height: 100vh;
   flex-shrink: 2;
-   align-self: stretch;
-    background-color: #111;
-    
-   
+  align-self: stretch;
+  background-color: #111;
+
+
   }
 
-  
+
   .sidenav a {
     padding: 30px 10px 6px 32px;
     text-decoration: none;
@@ -58,16 +62,16 @@
     }
     .img{
         border:100px solid greenyellow;
-        
-   
+
+
     }
-    
+
   }
   @media screen and (max-width: 600px) {
     .sidenav {
         width: 60px;
     }
-   
+
     .sidenav a {
         font-size: 14px;
         padding-left: 5px;
@@ -77,24 +81,24 @@
         padding:5px;
         flex-direction: column;
     }
-  
-  
-     
-    
+
+
+
+
   }
   .search{
       display: flex;
       margin-top: 70px;
       margin-left: 60px;
-    
+
   }
   input{
       height:40px;
       width:300px;
   }
 
- 
- 
+
+
  .images{
 display:flex;
 flex-wrap: wrap;
@@ -102,13 +106,13 @@ justify-content:space-around;
   width:100%;
   flex-basis: 100%;
   margin-top: 50px;
-  padding:10px; 
+  padding:10px;
 
     }
  .img{
      border:1px solid greenyellow;
      height:300px;
      width:300px;
-  
+
 
  }
