@@ -1,7 +1,8 @@
+
 .container{
     display:flex;
     flex-direction: column;
-  
+
 }
 .header{
    
@@ -19,27 +20,34 @@
 }
  .secondcontainer{
      display:flex;
-   
+     padding-top: 20px;
      }
 .thirdcontainer{
     display: flex;
-  
+
     flex-direction: column;
-   
+
     flex-grow:2;
-   
+
 }
 
  .sidenav {
    height: 100vh;
   flex-shrink: 2;
+<<<<<<< HEAD
    align-self: stretch;
     background-color:#f1f1c1;;
     
    
+=======
+  align-self: stretch;
+  background-color: #111;
+
+
+>>>>>>> df2b1a1fb9f5ca07bf73cbdb88878bdd88592ef2
   }
 
-  
+
   .sidenav a {
     padding: 30px 10px 6px 32px;
     text-decoration: none;
@@ -64,16 +72,16 @@
     }
     .img{
         border:100px solid greenyellow;
-        
-   
+
+
     }
-    
+
   }
   @media screen and (max-width: 600px) {
     .sidenav {
         width: 60px;
     }
-   
+
     .sidenav a {
         font-size: 14px;
         padding-left: 5px;
@@ -83,36 +91,43 @@
         padding:5px;
         flex-direction: column;
     }
-  
-  
-     
-    
+
+
+
+
   }
   #searchInput{
       display: flex;
       margin-top: 70px;
       margin-left: 60px;
-    
+
   }
   input{
       height:40px;
       width:300px;
   }
 
+<<<<<<< HEAD
  
  
  #images{
+=======
+
+
+ .images{
+>>>>>>> df2b1a1fb9f5ca07bf73cbdb88878bdd88592ef2
 display:flex;
 flex-wrap: wrap;
 justify-content:space-around;
   width:100%;
   flex-basis: 100%;
   margin-top: 50px;
-  padding:10px; 
+  padding:10px;
 
     }
  .img{
      border:1px solid greenyellow;
+<<<<<<< HEAD
      height:400px;
      width:400px;
   
@@ -160,3 +175,10 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+=======
+     height:300px;
+     width:300px;
+
+
+ }
+>>>>>>> df2b1a1fb9f5ca07bf73cbdb88878bdd88592ef2
