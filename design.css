@@ -1,7 +1,4 @@
-body{
 
-  background-image:url("book.jpg");
-}
 .container{
     display:flex;
     flex-direction: column;
