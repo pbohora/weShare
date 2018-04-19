@@ -34,17 +34,10 @@
  .sidenav {
    height: 100vh;
   flex-shrink: 2;
-<<<<<<< HEAD
    align-self: stretch;
     background-color:#f1f1c1;;
     
    
-=======
-  align-self: stretch;
-  background-color: #111;
-
-
->>>>>>> df2b1a1fb9f5ca07bf73cbdb88878bdd88592ef2
   }
 
 
@@ -107,15 +100,9 @@
       width:300px;
   }
 
-<<<<<<< HEAD
  
  
  #images{
-=======
-
-
- .images{
->>>>>>> df2b1a1fb9f5ca07bf73cbdb88878bdd88592ef2
 display:flex;
 flex-wrap: wrap;
 justify-content:space-around;
@@ -127,7 +114,6 @@ justify-content:space-around;
     }
  .img{
      border:1px solid greenyellow;
-<<<<<<< HEAD
      height:400px;
      width:400px;
   
@@ -175,10 +161,3 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
-=======
-     height:300px;
-     width:300px;
-
-
- }
->>>>>>> df2b1a1fb9f5ca07bf73cbdb88878bdd88592ef2
