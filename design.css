@@ -1,56 +1,68 @@
 
-.container{
+.Container{
     display:flex;
-    flex-direction: column;
-
+    flex-direction: row;
+  
+border:1px dotted blue;
 }
 .header{
-   
-    flex-basis:100%;
-     overflow: hidden;
-    background-color: #f1f1f1;
-  padding: 20px 10px;
-  height:40px;
+   display:flex;
+   justify-content: center;
+   background-color: #f1f1f1;
+  padding: 5px 10px;
+  height:80px;
       
+}
+.header img{
+    height:100%;
 }
 
 
 .logo{
     float: right;
 }
- .secondcontainer{
-     display:flex;
-     padding-top: 20px;
-     }
-.thirdcontainer{
+ 
+.secondContainer{
+    border:1px solid red;
     display: flex;
+    margin-right: 10px;
+    flex-direction:column;
+    margin-left:150px;
 
-    flex-direction: column;
-
-    flex-grow:2;
-
+   
 }
 
  .sidenav {
-   height: 100vh;
-  flex-shrink: 2;
-   align-self: stretch;
-    background-color:#f1f1c1;;
-    
+ 
+  
+  width:150px; 
+  position: fixed;
+  height:100%;
+  text-align: center;
+  
+ 
+ 
+  
+  }
+ 
+  .side{
+      margin-top:100px;
+      position: fixed;
    
   }
 
 
   .sidenav a {
-    padding: 30px 10px 6px 32px;
+    padding: 30px 5px 6px 10px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: #818181;
     display: block;
 }
 .sidenav a:hover {
     color: black;
 }
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -59,26 +71,35 @@
  .sidenav {
         width: 100px;
          }
+ .side{
+     width:100px;
+ }
     .sidenav a {
         font-size: 18px;
         padding-left:15px;
     }
-    .img{
-        border:100px solid greenyellow;
-
-
+    .secondContainer{
+        margin-left:100px;
     }
+   
 
   }
-  @media screen and (max-width: 600px) {
+ @media screen and (max-width:600px){
     .sidenav {
         width: 60px;
     }
+    .side{
+        width:60px;
+    }
+    .secondContainer{
+        margin-left: 60px;
+    }
+    
 
     .sidenav a {
         font-size: 14px;
         padding-left: 5px;
-        align-items: left;
+       
     }
     .images{
         padding:5px;
@@ -89,15 +110,21 @@
 
 
   }
-  #searchInput{
-      display: flex;
-      margin-top: 70px;
-      margin-left: 60px;
+ 
+.searchdiv{
+    border:1px dashed purple;
+    margin-top: 50px;
+    margin-left:50px; 
 
-  }
-  input{
+    
+}
+  
+  #searchInput{
+
       height:40px;
       width:300px;
+      margin-left:30px;
+
   }
 
  
@@ -107,20 +134,18 @@ display:flex;
 flex-wrap: wrap;
 justify-content:space-around;
   width:100%;
-  flex-basis: 100%;
-  margin-top: 50px;
-  padding:10px;
+ 
+  
 
     }
  .img{
-     border:1px solid greenyellow;
+   
      height:400px;
      width:400px;
+    
   
 
  }
-
- /*css for form.html*/
 
  
  
@@ -148,16 +173,67 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #10e9d7;
+}
+input[type=submit]{
+    background-color: #1E4C87
 }
 
 /* Add a background color and some padding around the form */
 .details {
-    margin-top: 100px;
-    margin-left: 700px;
+  
+  
     height:600px;
     width:500px;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color:#F6E0C1;
     padding: 20px;
+   
+}
+/* css for modal */
+/* The Modal (background) */
+.modal {
+     display: none;/*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #FFDB99;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 50px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content--items{
+    display: flex;
+    margin-bottom:15px;
+   
+}
+.first{
+    font-size: 30px;
+    font-weight: bold;
 }
