@@ -1,11 +1,10 @@
 
 
-
-
 plugins {
+    id 'java'
     id 'com.gradle.build-scan' version '1.13.1'
     id 'war'
-    id 'org.akhikhl.gretty' version '1.4.2'
+    //id 'org.akhikhl.gretty' version '1.4.2'
 }
 
 buildScan {
@@ -20,7 +19,8 @@ task copyServer(type: Copy) {
     from(configurations.compileOnly) {
         include "jetty-runner*"
         //include "webapp-runner*"
-        rename { String fileName -> "jetty-runner.jar"
+        rename { String fileName ->
+            "jetty-runner.jar"
         }
         println 'done!'
     }
@@ -36,10 +36,7 @@ task copyToLib(type: Copy) {
 }
 
 //Stage task is required for deploying to Heroku
-task stage {
-    dependsOn clean, war, copyServer, copyToLib
-}
-war.mustRunAfter clean
+
 
 dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
@@ -113,4 +110,15 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
     mavenCentral()
+}
+
+
+//Add to task stage that Heroku to prepare deployment
+task stage {
+    dependsOn clean, war, copyToLib
+}
+war.mustRunAfter clean
+jar {
+    baseName = 'app'
+    version = '0.0.1'
 }
