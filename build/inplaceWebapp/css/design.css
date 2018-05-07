@@ -1,0 +1,223 @@
+
+.container{
+    display:flex;
+    flex-direction: column;
+
+}
+.header{
+    display: flex;
+    flex-basis:100%;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    height:80px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+p{
+    padding-left:10%;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.logo{
+
+}
+.secondcontainer{
+    display:flex;
+    padding-top: 20px;
+}
+.thirdcontainer{
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow:2;
+
+}
+
+.sidenav {
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-top: 150px;
+    flex-shrink: 2;
+    align-self: stretch;
+    background-color:#f1f1c1;
+    overflow-x: hidden;
+
+
+}
+
+
+.sidenav a {
+    padding: 30px 10px 6px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: black;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 920px) {
+    .sidenav {
+        width: 100px;
+    }
+    .sidenav a {
+        font-size: 18px;
+        padding-left:15px;
+    }
+    .img{
+        border:100px solid greenyellow;
+
+
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .sidenav {
+        width: 60px;
+    }
+
+    .sidenav a {
+        font-size: 14px;
+        padding-left: 5px;
+        align-items: left;
+    }
+    .images{
+        padding:5px;
+        flex-direction: column;
+    }
+
+
+
+}
+.about_us{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 200px;
+}
+.search_input{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding-left: 550px;;
+    padding-top: 300px;
+
+}
+.search_button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding-left: 500px;
+
+}
+input{
+    height:40px;
+    width:300px;
+}
+
+
+
+#images{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width:100%;
+    flex-basis: 100%;
+    margin-top: 50px;
+    padding:10px;
+
+}
+
+
+/*css for form.html*/
+.reg_back{
+
+    width: 350px;
+    padding-top: 100px;
+    padding-left: 500px;
+
+
+}
+.log_back{
+    width: 350px;
+    padding-top: 250px;
+    padding-left: 500px;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+/*input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.details {
+    margin-top: 100px;
+    margin-left: 700px;
+    height:auto;
+    width:500px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.contact-us{
+    padding-left: 300px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.category_input{
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.search_bar{
+    display:flex;
+    padding-right: 5px ;
+
+}
+.for-search{
+    width:100px;
+    border: none;
+}
+button{
+    height: 40px;
+    margin-top: 6px;
+    border: none;
+    width:50px;
+
+}
